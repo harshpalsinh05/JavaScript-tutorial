@@ -1,0 +1,112 @@
+<!-- console.log ("tut 47 Introduction to Browser Events ") -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: teal;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 450px;
+            padding: 10px;
+            row-gap: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            flex-shrink: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .round-border {
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" onclick="console.log('mouse is inside the container')"
+        onclick="console.log('container is clicked')">
+        <button onclick="console.log('HELLO'); let a = 6; console.log(a)">Click here</butto>
+    </div>
+
+    <div class="container" id="container">
+        <div class="box" id="box-1" onclick="myonclick()">box-1</div>
+        <div class="box random" id="box-2" onmouseover="myonmouseover()">box-2</div>
+        <div class="box" id="box-3" onmousemove="myonmousemove()">box-3</div>
+        <div class="box" id="box-4" onmouseout="myonmouseout()">box-4</div>
+        
+    </div>
+
+    <form action="#">
+        <input type="te xt" id="nameInput" onkeyup="keyUpEvent()" onkeydown="keyDownEvent()"
+            onkeypress="keyPressEvent()">
+    </form>
+
+
+    <script>
+        //An event is a signal that something has happened. All Dom nodes genereates such signals
+        /* Some Important DOM events are:
+        mouse events : click, contectmenu(right click), mouseover/mouseout, mousedown/mouseup, mousemove
+        keyboard events : keydown and keyup
+        form element events : submit, focus etc
+        document events : DOMContentLoaded
+
+        handling event can also be handled through the onclick propery
+        element.onclick = function() {
+            alert("yes")
+        };
+        !!!!! Adding a handler with javascript overwrites the existing handler
+        */
+
+        let b = document.getElementsByClassName("container")[0]
+        b.onclick = () => {
+            let c = document.body.firstElementChild.firstElementChild.innerHTML = "DONT'T CLICK ME"
+        }
+
+        let myonclick = () => {
+            console.log("use of an onclick method")
+        }
+
+        let myonmouseover = () => {
+            console.log("use of an mouseover method")
+        }
+
+        let myonmousemove = () => {
+            console.log("use of an mousemove method")
+        }
+
+        let myonmouseout = () => {
+            console.log("use of an mouseout method")
+        }
+
+        let keyUpEvent = () => {
+            console.log("the keyup was pressed")
+        }
+
+        let keyDownEvent = () => {
+            console.log("the keydown was pressed")
+        }
+
+        let keyPressEvent = () => {
+            console.log("the key was pressed")
+        }
+
+    </script>
+</body>
+
+</html>

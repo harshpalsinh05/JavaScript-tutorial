@@ -1,0 +1,59 @@
+<!-- console.log("tut 43 HTML insertion methods"); -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>        
+        
+        i am start of this container (outerlayer)<br>
+
+        <div class="container">
+
+            i am start of this container (innerlayer)
+
+            <div id="first">I am a first element</div>
+
+            i am end of this container (innerlayer)
+
+        </div>
+
+        i am end of this container (outerlayer)
+
+        <script>
+        // the simple method for insertion is using innerHTML
+          let a = document.getElementsByTagName("div")[0]
+          console.log(a.innerHTML, a.innerHTML = "<h1>Hi Its Harshpal</h1>", "\t")
+
+        // some other insertion method are
+        // 1st is using .createElement() 
+        let div = document.createElement('div') //created element
+        div.className = "alert" // set class
+        div.innerHTML = "<span> YO GUYS ! </span>" //added the text and the new element
+        //console.log(document.body.append(div))
+        //console.log(document.body.appendChild(div))
+        
+        // 2nd method .append() -> It will append at the end of the node but inside the container
+        console.log(a.append(div))
+        
+        // 3rd method .prepend() -> It will insert at the beginning of the node but inside the container
+        console.log(a.prepend(div))
+        
+        // 4th method .before() -> it will insert before node but outside the container
+        console.log(a.before(div))
+        
+        // 5th method .after() -> it will insert after node but outside the container
+        console.log(a.after(div))
+        
+        // 6th methodWith() -> it will replaces node with the given node
+        let i = document.createElement('i')
+        i.innerHTML = "<i>NOT TODAY GUYS</i>"
+        console.log(a.replaceWith(i))    // here it will remove the whole container Div and replace it with <i>
+
+          
+    </script>
+    </body>
+</html>

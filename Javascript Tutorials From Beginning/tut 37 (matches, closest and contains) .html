@@ -1,0 +1,39 @@
+<!-- console.log(" tut 37 Matches, Closest and Contains in javascript") -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="box" id="id1"> This ia 1st element <span id="sp1">Harshpal</span></div>
+    <div class="box" id="id2"> This ia 2st element</div>
+
+    <script>
+
+        //element.matches(css selector) is use to check if the element matches the given css selector
+        let d = document.getElementById("id1")
+        let b = document.getElementById("sp1")
+        console.log(d)
+        console.log(d.matches(".class")) // it will show false beacuse it dosn't have "class" nameed class in there.
+        console.log(d.matches(".box")) // it will show true because it have "box" named class in there.
+        console.log("\t")
+
+        //element.closest(css selector) is use to look for the nearest ancestor that matches the given css selector. the element itself is also checked
+        console.log(sp1.closest("#sp1"))
+        console.log(sp1.closest(".box"))
+        console.log(d.closest("#id1"))
+        console.log("\t")
+
+        //element.contains(element) return ture if elementB is inside elementA or when elementA == elementB
+        console.log(b)
+        console.log(d.contains(b))
+        console.log(d.contains(d))
+        console.log(b.contains(d))
+ 
+    </script>
+</body>
+</html>

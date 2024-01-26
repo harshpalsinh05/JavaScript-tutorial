@@ -1,0 +1,48 @@
+<!-- console.log(" tut 34 elements only navigation in javascript") -->
+
+<!-- /* use of elementchild */ -->
+<!-- sometimes we don't want text or comments nodes, so use we element to select only element from the page  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Hire me</li>
+            <li>contact me</li>
+        </ul>
+    </nav>  
+
+    <div class="container">
+        <p>hi my slef Harshpalsinh</p>
+    </div>
+    
+    <script>
+        let b = document.body
+        console.log("The first child node is ", b.firstChild) // it will print text
+        console.log("The last child node is ", b.lastChild) // it will print text
+
+        console.log("The first Element child node is ", b.firstElementChild) // it will print nav tag
+        console.log("The last Element child node is ", b.lastElementChild) // it will print nav tag
+        console.log("\t");
+
+        console.log("The previous Element sibling node is ", b.previousElementSibling)
+        console.log("The next Element sibling node is ", b.nextElementSibling)
+
+        //use of css in js
+        const changebg = () => {
+            document.body.firstElementChild.style.background = "red"
+        }      
+        console.log()
+
+    </script>    
+</body>
+</html>

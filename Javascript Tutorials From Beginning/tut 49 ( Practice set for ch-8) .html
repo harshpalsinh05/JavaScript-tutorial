@@ -1,0 +1,86 @@
+<!-- console.log ("tut 49 Practice set for ch-8 ") -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bulb {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+
+        .bulb-container {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="click">click</button>
+    <button id="click">here</button>
+
+    <h1>Bookmark</h1>
+    <a href="https://www.google.com"><button id="google">google</button></a>
+    <a href="https://www.facebook.com"><button id="fb">facebook</button></a>
+    <a href="https://www.twitter.com"><button id="twitter">twitter</button></a><br><br>
+
+    <div id="bulb" class="bulb-container bulb">
+
+    </div>
+
+
+    <script>
+        // Q1
+        let click = document.getElementsByClassName("click")[0]
+        let clickid = document.getElementById("click")
+
+        click.onclick = () => {
+            alert("hello")
+        }
+        clickid.onclick = () => {
+            alert("hello")
+        }
+
+        // Q2
+        // done
+
+        // Q3 use of eventlistener
+        let gg = document.getElementById("google")
+        gg.addEventListener("click", function () {
+            window.location = "https://www.google.com";
+        })
+
+        let fb = document.getElementById("fb")
+        fb.addEventListener("click", function () {
+            window.location = "https://www.facebook.com";
+        })
+
+        let tt = document.getElementById("twitter")
+        tt.addEventListener("click", function () {
+            window.location = "https://www.twitter.com";
+        })
+
+        // Q4
+        // solve it later
+
+        // Q5
+        let tg = setInterval(function () {
+            document.querySelector("#bulb").classList.toggle("bulb")
+        }, 100)
+
+    </script>
+</body>
+
+</html>

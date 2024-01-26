@@ -1,0 +1,31 @@
+<!-- console.log("tut 44 insertAdjacentHTML, insertAdjacentElement and insertAdjacentText "); -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first">
+        <b>Hey i am first</b>   
+    </div>
+
+    <div id="div"> Remove the node</div>
+
+
+    <script>
+        let first = document.getElementById("first")
+        console.log(first)
+        // use of insertAdjacentHTML
+        console.log(first.insertAdjacentHTML("beforebegin", '<div class="test"> (outside div) beforebegin </div><hr>')) // it will be at the beginning of the id first div but outside the div
+        console.log(first.insertAdjacentHTML("beforeend", '<div class="test"> (inside div) beforeend </div><hr>')) // it will be at the end of the id firsst div but inside the div at the ending
+        console.log(first.insertAdjacentHTML("afterbegin", '<div class="test"> (inside div) afterbegin </div>')) // it will be at the beginning of the id first div but inside the div at the beginning
+        console.log(first.insertAdjacentHTML("afterend", '<div class="test"> (outside div) afterend </div>')) // it will be at the ending of the id first dic but outside the div at the ending
+
+        // use of .remove() method -> use to remove the node 
+        console.log(document.getElementById("div").remove("div"))
+    </script>
+</body>
+</html>

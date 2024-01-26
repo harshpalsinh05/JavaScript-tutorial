@@ -1,0 +1,26 @@
+<!-- // console.log("tut 51 Exercise 4 clock using js"); -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="time">THE CLOCK</div>
+
+    <script>
+        let a = new Date()
+        let h = a.getHours()
+        let m = a.getMinutes()
+        let s = a.getSeconds()
+        let d = a.getDate()
+        let tt = document.getElementById("time")
+        tt.innerHTML = document.write("the rigth now time is - ", d, " Date ", h, " Hour ", m, " Mintes ", s, " Seconds ")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!-- console.log("tut 41 innerHTML, outerHTML and other properties"); -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        " HELLO "
+        <span id="er">hi My self Harshpal</span>
+        <span id="tt" hidden > YOO YOO HONEYSINGHHH !</span>
+
+        <script>
+        //console.dir VS console.log
+        // .log shows the element DOM tree
+        console.log(document.getElementsByTagName("span")[0]);
+        console.log("\t")
+        
+        // .dir shows the element as an object with its properties
+        console.dir(document.getElementsByTagName("span")[0])
+        console.log("\t")
+        
+        //tagname VS nodename (both are used to read the tag name of an element)
+        // .tagname -> only exist for element nodes
+        // .nodename -> defined for any node (text, comments, etc)
+        console.log(document.body.firstChild.tagName) // it will show undefined, because it only read when it will be a element node
+        console.log(document.body.firstChild.nodeName) // it will print #text because it is defined for text also
+        console.log("\t")
+        
+        //here both will be defined because elementchild is called
+        console.log(document.body.firstElementChild.tagName)
+        console.log(document.body.firstElementChild.nodeName)
+        console.log("\t")
+        
+        // ! important Topic  
+        // .innerHTML -> it allows to get and as well as set the HTML inside the element as a string
+        /* innerHTML is only valid for element nodes. FOR OTHER NODE TYPE USE .nodeValue or .data  */
+        let er = document.getElementById("er") 
+        console.log(er.innerHTML) // get HTML inside the element 
+        console.log(er.innerHTML = "<i> Hey its Not ME </i>") // set HTML inside the element
+        console.log(document.body.firstChild.nodeValue)
+        console.log(document.body.firstChild.data)
+        console.log("\t")
+        
+        // ! important Topic
+        // .outerHTML -> It contain the full HTML. innerHTML + the element itself 
+        let out = document.getElementById("er")
+        console.log(out.outerHTML) //get an outerHTML 
+        
+        console.log(out.outerHTML = "<div> NICE NAME HAH </div") // set the outer.HTML
+        console.log("\t")
+        
+        // .textContent -> provides access to the text inside the element : only text minus all tag.
+        console.log(document.body.textContent) // IT will print all text inside the body of the HTML file
+        console.log(out.textContent)
+        console.log("\t")
+        
+        // .hidden property -> the "hidden" attribute & the DOM property specifies whether the element is visible or not
+        let tt = document.getElementById("tt")
+        console.log(tt.hidden) // it will show us true
+        console.log(tt.hidden = false) // Now it will show you what was the hidden text or the value was inside there
+
+    </script>
+    </body>
+</html>

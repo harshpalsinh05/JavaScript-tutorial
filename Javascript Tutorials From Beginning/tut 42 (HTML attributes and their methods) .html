@@ -1,0 +1,53 @@
+<!-- console.log("tut 42 HTML attributes and their methods"); -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <div id="first" class="CLASSNAME"> HEY I AM Harshpalsinh </div>
+        <div id="second" data-game="name" data-player="good"> Harshpalsinh R Jadeja</div>
+
+        <script>
+        // .getAttribute(name) -> it is used to get the value of an attribute
+        let first = document.getElementById("first").getAttribute("class") 
+        console.log(first) // it will print the class name declared inside the div
+        console.log("\t") 
+        
+        // .hasAttribute(name) -> it is used to check for existance of an attribute
+        console.log(document.body.firstElementChild.hasAttribute("class")) // it will print true because there is class attribute 
+        console.log(document.body.firstElementChild.hasAttribute("style")) // it will print false because there is no style attribute 
+        console.log("\t") 
+        
+        // .setAttribute(name,value) -> it is used to set value of an attribute
+        console.log(document.getElementById("first").setAttribute("hidden", "true"))
+        console.log(document.getElementById("first").hidden) // here it will print true because above we set hidden = ture
+        console.log("\t") 
+        
+        console.log(document.getElementById("second").setAttribute("class", "NICE"))
+        console.log(document.getElementById("second").getAttribute("class")) // it will delcared the class name which we set above
+        console.log("\t") 
+        
+        // .removeAttribute(name) -> it is used remove the attribute from element
+        console.log(document.getElementById("second").removeAttribute("class"))
+        console.log(document.getElementById("second").getAttribute("class")) // it will delcared null because we have removed the class from the element
+        console.log("\t") 
+        
+        // .attributes   -> it is used to get the collection of all attributes
+        console.log(document.getElementById("first").attributes)
+        
+        // data- * attributes
+        /* we can always create custom attribute but the ones starting with "data -" are reserved for
+        programmers use. They are avaible in a property named dataset. if an element has an attribute named
+        "data-one", its available as element.dataset.one */   
+        console.log(document.getElementById("second").dataset)
+        console.log(document.getElementById("second").dataset.game)
+        console.log(document.getElementById("second").dataset.player)
+        
+    </script>
+    </body>
+</html>

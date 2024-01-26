@@ -1,0 +1,56 @@
+<!-- console.log(" tut 33 Parent and sibling of an element in javascript") -->
+
+<!-- /* notes on DOM Collection
+# they are read only 
+# they are live element.childnodes variable will automatically update if 
+childnodes of element is changed.
+# they iterable with using for-of loop
+*/ -->
+
+<!-- // sibling are nodes that are children of the same parent eg. head and body
+// next sibling is in "nextSibling" property and the previous one is in the "previousSibling"
+// the parent is available a parentNode  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head><body><div>
+            <p>hi my self harshpal</p>
+        </div>
+        <div>
+            <b>it is a sibling</b>
+        </div>
+    </body>
+
+    <script>
+    console.log(document.body.firstChild); // it will show <p> tag
+    console.log(document.body.lastChild); // it will show the script tag
+    console.log(document.body.childNodes); // it will show all child nodes inside the elements
+    // it the childnodes will look like array but it is not, 
+    // we can convert them to array using Array.from method
+    let arr = Array.from(document.body.childNodes);
+    console.log(typeof arr, arr)  
+    console.log(document.body.hasChildNodes()) // it call true if there is any childnode inside the body and false if it has not
+    console.log("\t");
+    
+    // use of sibling tags
+    console.log(document.head.nextSibling); // it will print body tag 
+    console.log(document.body.previousSibling); // it will print head tag 
+    console.log("\t");
+
+    //use of parentNode and parentElement
+    console.log(document.body.firstChild)
+    let a = document.body.firstChild
+    console.log(a.parentNode)
+    console.log(a.parentElement)
+    console.log(a.firstChild.nextSibling)
+// HERE BOTH WILL PRINT BODY TAG BEACUSE HAVE SAME PARENT 
+
+        console.log(" \t")
+    console.log(document.documentElement.parentNode) // it will print the document of html
+    console.log(document.documentElement.parentElement) // it will print null
+
+</script>
+</html>

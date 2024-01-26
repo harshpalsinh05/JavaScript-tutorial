@@ -1,0 +1,50 @@
+<!-- console.log ("tut 45 changing HTML classes using js - className and classList") -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            width: 200px;
+            color: yellow;
+            background-color: red;
+        }
+        .yellow{
+            width: 200px;
+            color: black;
+            background-color: yellow;
+        }
+        .font {
+            font-size: 20px;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="">
+        <span>Hey IT Harshpalsinh</span>
+    </div>
+
+    <script>
+
+        //if we assign something to element.className it will replace the whole string of classes
+        let first = document.getElementById("first")
+        console.log(first.className = "font")
+
+        // if we want to add or remove the class we use element.classList()
+        console.log(first.classList.add("yellow")) //it will add class
+        console.log(first.classList.remove("yellow")) //it will remove class
+                
+        // if we want toggle the class we use element.classList.toggle()
+        console.log(first.classList.toggle("red")) //first time it will add the class
+        console.log(first.classList.toggle("red")) //if we do second it will remove the class
+
+        // to ensure that a class in there or not we use .contain
+        console.log(first.classList.contains("yellow")) // it will either true or false
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- console.log("tut 38 chapter -6  practice Question"); -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul class="this">
+            <li class="cyan" id="st">HOME</li>
+            <li class="cyan" id="nd">About US</li>
+            <li class="cyan" id="rd">Contact Me</li>
+        </ul>
+    </nav>
+
+    <section>
+        <ul class="that">
+            <li class="cyan" id="s">HOME</li>
+            <li class="cyan" id="n">About US</li>
+            <li class="cyan" id="r">Contact Me</li>
+        </ul>
+    </section>
+
+    <table>
+        <thead>table</thead>
+            <tr>
+                <td>1</td>
+                <td>h</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>r</td>
+            </tr>
+
+    </table>
+
+    <script>
+        // Q1
+        // 1st method 
+        let colors = document.getElementsByTagName("nav")[0].firstElementChild.firstElementChild
+        console.log(colors)
+        colors.style.color = "red"
+        
+        // 2nd mehtod
+        let these = document.querySelector("#nd")
+        console.log(these)
+        nd.style.color = "green"
+        
+        // Q2
+        //it will not show the tbody tag in the "view source page" button but by using the inspect 
+        // button it will show the tbody tag beacuse it use the auto corrrection
+        
+        // Q3
+        let a = document.getElementsByTagName("section")[0].firstElementChild.firstElementChild
+        let b = document.getElementsByTagName("section")[0].firstElementChild.lastElementChild
+        console.log(a)
+        console.log(b)
+        a.style.color = "darkgreen"
+        b.style.color = "darkgreen"
+
+        // Q4
+        // 1st method
+        Array.from(document.getElementsByTagName("li")).forEach((element) => {
+            element.style.background = "cyan"
+        })
+        
+        // 2nd method
+        let c = document.querySelectorAll(".cyan")
+        console.log(c)
+        c[3].style.background = "lightpink"
+        c[4].style.background = "lightpink"
+        c[5].style.background = "lightpink"
+
+        // Q5
+        // non of these
+
+    </script>
+</body>
+</html>
