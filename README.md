@@ -7,7 +7,7 @@
 
 </br>
 ## Chapter 2 (Learning about Variables and data types)
-<img scr="https://miro.medium.com/v2/resize:fit:1024/1*HuN_T7uPgeQ33Sg05FBH7Q.jpeg" alt="harshpalsinh05" width="300" height="200"/>
+<img scr="images/3.jpg" alt="harshpalsinh05" width="300" height="200"/>
 
 </br>
 ## Chapter 3 (Expressions And Conditionals)
