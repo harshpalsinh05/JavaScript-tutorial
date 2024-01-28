@@ -5,7 +5,6 @@
 ## Chapter 1 (Introduction to JavaScript Programming)
 <img src="https://i.ytimg.com/vi/jhKKDz5a8ls/maxresdefault.jpg" alt="harshpalsinh05" width="300" height="200"/>
 
-</br>
 ## Chapter 2 (Learning about Variables and data types)
 <img scr="images/3.jpg" alt="harshpalsinh05" width="300" height="200"/>
 
