@@ -6,7 +6,7 @@
 <img src="https://i.ytimg.com/vi/jhKKDz5a8ls/maxresdefault.jpg" alt="harshpalsinh05" width="300" height="200"/>
 
 ## Chapter 2 (Learning about Variables and data types)
-<img scr="images/3.jpg" alt="harshpalsinh05" width="300" height="200"/>
+<img scr="3.jpg" alt="harshpalsinh05" width="300" height="200"/>
 
 ## Chapter 3 (Expressions And Conditionals)
 <img scr="https://i.pinimg.com/originals/f5/90/5e/f5905e1ed193e7d540f3b6e4701dd8c8.png" alt="harshpalsinh05" width="300" height="200"/>
