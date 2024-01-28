@@ -10,7 +10,9 @@
 
 
 ## Chapter 3 (Expressions And Conditionals)
-<img scr="https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/31a59d4f-636d-4e34-bd11-c0c24cae8ca8" alt="harshpalsinh05" width="300" height="200"/>
+![6](https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/1858459e-9767-4974-92bc-8f5d1e580153)
+
+<img scr="" alt="harshpalsinh05" width="300" height="200"/>
 <img scr="https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/e325ca3d-b775-4f08-af1e-c612353978e4" alt="harshpalsinh05" width="300" height="200"/>
 
 ## Chapter 4 (Use of Loops and Functions)
