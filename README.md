@@ -10,7 +10,8 @@
 
 
 ## Chapter 3 (Expressions And Conditionals)
-<img scr="https://i.pinimg.com/originals/f5/90/5e/f5905e1ed193e7d540f3b6e4701dd8c8.png" alt="harshpalsinh05" width="300" height="200"/>
+<img scr="![image](https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/80a964dc-bfca-4d48-b22e-8006aecb443b)
+" alt="harshpalsinh05" width="300" height="200"/>
 <img scr="https://resource-centre.net/wp-content/uploads/2016/11/javascript-conditional-statements-tutorial.jpg" alt="harshpalsinh05" width="300" height="200"/>
 
 ## Chapter 4 (Use of Loops and Functions)
