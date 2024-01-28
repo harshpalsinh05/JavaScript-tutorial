@@ -25,12 +25,11 @@
 ## Chapter 7 (Use of Javascript in Browser)
 ![8](https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/1c9c3b73-8260-4c4c-b3d1-daa8208f33f5)
 
-
 ## Chapter 8 (Walking In DOM)
-
+![4](https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/44fe5f50-04e1-4baf-bbfe-7503681663a4)
 
 ## Chapter 9 (DOM Events and Some other Properties)
-![4](https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/44fe5f50-04e1-4baf-bbfe-7503681663a4)
+![12](https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/def07065-3431-4134-802c-82c95d8ae2e2)
 
 ## Chapter 10 (Callback, Promises and Async/Await)
 ![5](https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/e4ae9ab9-3a56-4a63-958f-c417ae2a5e7b)
