@@ -11,7 +11,7 @@
 
 ## Chapter 3 (Expressions And Conditionals)
 <img scr="https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/80a964dc-bfca-4d48-b22e-8006aecb443b" alt="harshpalsinh05" width="300" height="200"/>
-<img scr="https://resource-centre.net/wp-content/uploads/2016/11/javascript-conditional-statements-tutorial.jpg" alt="harshpalsinh05" width="300" height="200"/>
+<img scr="https://github.com/harshpalsinh05/JavaScript-tutorial/assets/114898124/e325ca3d-b775-4f08-af1e-c612353978e4" alt="harshpalsinh05" width="300" height="200"/>
 
 ## Chapter 4 (Use of Loops and Functions)
 <img scr="https://1.bp.blogspot.com/-go43Bzd1C2k/X4kk4n17mKI/AAAAAAAACDo/_Fb53VYqmRkpK3wjUOaOtlfQJwZtY5J-ACPcBGAYYCw/w573-h310/JavaScript-Loops-1200x675.jpg" alt="harshpalsinh05" width="300" height="200"/>
