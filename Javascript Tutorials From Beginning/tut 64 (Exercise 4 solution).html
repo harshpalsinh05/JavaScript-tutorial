@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 45%;
+            width: 45%;
+            display: grid;
+            grid-template-rows: 35% 65%;
+            align-items: center;
+            justify-content: center;
+            border: .3rem solid #1a1a1a;
+            border-radius: 3rem;
+        }
+
+        h1 {
+            margin-top: 3rem;
+            font-size: 3.5rem;
+            text-align: center;
+            padding: 0 1rem;
+            border-bottom: 2px solid #1a1a1a;
+            background: linear-gradient(90deg, #00dbde,
+                    #fc00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .box {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .clock {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 .5rem;
+            width: 70%;
+            height: 8rem;
+            align-items: center;
+            color: #fff;
+            background-color: #1a1a1a;
+            position: relative;
+            border-radius: 1rem;
+            font-size: 4rem;
+            overflow: hidden;
+        }
+
+        .clock p {
+            font-size: 1rem;
+        }
+
+        .clock::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 90%;
+            height: 8rem;
+            background: linear-gradient(0deg, transparent,
+                    transparent, #2370f5, #2370f5, #2370f5);
+            z-index: 1;
+            transform-origin: bottom right;
+            animation: animate 5s linear infinite;
+        }
+
+        .clock::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 90%;
+            height: 8rem;
+            background: linear-gradient(0deg, transparent,
+                    transparent, #b91fdc, #b91fdc, #b91fdc);
+            z-index: 0;
+            transform-origin: bottom right;
+            animation: animate 5s linear infinite;
+            animation-delay: -3s;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .front-clock {
+            text-align: center;
+            padding-top: .6rem;
+            background-color: #0d0d0d;
+            width: 95%;
+            height: 95%;
+            border-radius: 1rem;
+            z-index: 1;
+        }
+
+        @media only screen and (max-width: 890px) {
+            .container {
+                width: 60%;
+            }
+
+            .clock {
+                font-size: 3rem;
+            }
+        }
+
+        @media only screen and (max-width: 590px) {
+            .container {
+                grid-template-rows: 20% 80%;
+            }
+
+            h1 {
+                margin-top: -110px;
+            }
+
+            .box {
+                display: grid;
+                grid-template-rows: 33% 33% 33%;
+            }
+
+            .clock {
+                width: 30vw;
+                margin: 0;
+                font-size: 4rem;
+                margin-top: .8rem;
+            }
+        }
+
+        @media only screen and (max-width: 350px) {
+            .container {
+                border: 0px;
+                /* width: 500px; */
+                grid-template-rows: 20% 80%;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+                border: 0px;
+                margin-top: 30px;
+            }
+
+            .box {
+                display: flex;
+                /* grid-template-rows: 52% 52% 50%; */
+            }
+
+            .clock {
+                display: flex;
+                align-content: space-between;
+                width: 30vw;
+                margin: 0px;
+                font-size: 3.5rem;
+                margin-top: 0.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="day" id="day"></h1>
+        <div class="box">
+            <div class="clock">
+                <div class="front-clock">
+                    <div id="hour">00</div>
+                    <p>hour</p>
+                </div>
+            </div>
+
+            <div class="clock">
+                <div class="front-clock">
+                    <div id="minute">00</div>
+                    <p>minutes</p>
+                </div>
+            </div>
+
+            <div class="clock">
+                <div class="front-clock">
+                    <div id="second">00</div>
+                    <p>seconds</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        let hour = document.getElementById('hour')
+        let minute = document.getElementById('minute')
+        let second = document.getElementById('second')
+        let day = document.getElementById('day')
+
+        let monthName = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+        ]
+        const clock = setInterval(function time() {
+            let today = new Date()
+            let d = today.getDate()
+            let m = today.getMonth()
+            let y = today.getFullYear()
+            let h = today.getHours()
+            let min = today.getMinutes()
+            let sec = today.getSeconds()
+
+            day.innerHTML = `${d} ${monthName[m]} ${y}`
+            hour.textContent = h
+            minute.innerText = min
+            second.innerText = sec
+        })
+    </script>
+</body>
+
+</html>
