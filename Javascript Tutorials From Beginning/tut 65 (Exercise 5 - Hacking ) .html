@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300&display=swap');
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 25px;
+            color: #15d515;
+            background: black
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text"></div>
+
+    <script>
+        let a = [
+            "Initializing Hack tool...",
+            "Connecting to Facebook...",
+            "Connecting to server 1...",
+            "Connection failed. Retrying...",
+            "Connecting to server 2",
+            "Connected Successfully...",
+            "Username harsh0516...",
+            "Trying Brute Force...",
+            "200K passwords tried...",
+            "Match not found",
+            "Another 200K passwords tried...",
+            "Match not found...",
+            "Another 200K passwords tried...",
+            "Match not found...",
+            "Another 200K passwords tried...",
+            "Match found...",
+            "Accessing Account...",
+            "Hack Successful..."
+        ]
+
+        const sleep = async (seconds) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => { resolve(true) }, seconds * 1000)
+            })
+        }
+
+        const showHack = async (message) => {
+            await sleep(2)
+            // console.log(message)
+            text.innerHTML = text.innerHTML + message + "<br>"
+        }
+
+        (async () => {
+            for (let i = 0; i < a.length; i++) {
+                await showHack(a[i])
+            }
+        })()
+    </script>
+</body>
+
+</html>
