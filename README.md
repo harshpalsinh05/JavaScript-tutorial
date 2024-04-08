@@ -1,5 +1,6 @@
 # JavaScript tutorial from Basics
 <img src="https://www.web-development-institute.com/wp-content/uploads/2015/03/Basic-JavaScript-Tutorial-for-Beginners.jpg" alt="harshpalsinh05" />
+<h3>Welcome to the ultimate JavaScript repo designed to take you from a beginner to a JavaScript master! Whether you're just starting your coding journey or looking to enhance your skills, this comprehensive tutorial cover everything from the basics to advanced concepts.</h3>
 
 # Table of Content
 ## Chapter 1 (Introduction to JavaScript Programming)
